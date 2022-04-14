@@ -89,7 +89,9 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
+    .map{
+        font-size: 90%;
+    }
     .map i{
         width: 50px;
         height: 50px;
