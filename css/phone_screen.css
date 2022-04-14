@@ -1,0 +1,304 @@
+/*******PHONE DISPLAY : BREAKPOINT 768px********/
+@media screen and (max-width: 768px){
+    
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    h1, h2, h3 {
+        margin: 5px 0 5px 0;
+    }
+    
+    /***___________________________FONT_______________________________________***/
+
+    h1{
+        font-weight:700;
+        font-size: 140%;
+    }
+
+    div{
+        font-weight: 400;
+        font-size: 100%;
+    }
+
+    .link_header ul{
+        font-weight: 500;
+        font-size: 100%;
+    }
+
+    i{
+        font-size: 130%;
+    }
+
+    /***_________________________________HEADER_____________________________________***/
+
+    header{
+        height: 150px; 
+    }
+
+    .logo img
+    {
+        height: 50px;
+    }
+
+    /***____________________Section recherche_filtre____________________________________***/
+
+    .recherche_filtre{
+        margin: 25px 20px 20px 20px;
+    }
+
+    /******Recherche*******/
+
+
+    .recherche_filtre h1, .recherche_filtre div, form {
+        text-align: left;
+    }
+
+    .recherche_filtre h1, .commentaires{
+        margin-left: 0;
+    }
+
+    input{
+        width: 60%;
+    }
+
+    form{
+        margin: 30px 0px 0px 0;
+        width: 100%;
+    }
+
+    .map i{
+        position: relative;
+        top: 13px;
+    }
+
+    button{
+        font-weight: 300;
+        font-size: 80%;
+        position: relative;
+        right: 10px;
+        width: 50px ;
+        border-radius: 15px;
+    }
+
+    .rechercher{
+        display: none;
+    }
+
+    .loupe{
+        display: contents;
+    }
+
+    /*______________Filtre___________*/
+
+    .filtre{
+        margin-top: 30px;
+        justify-content: left;
+    }
+
+    .filtre div{
+        font-size: 100%;
+    }
+
+    .im{
+        margin-left: -5px;
+    }
+
+    .text_filtre{
+        width: 100%;
+    }
+
+    .eco, .familial, .romantique, .animaux{
+        padding: 0 15px 0 0;
+        margin-right: 10px;
+        margin-left: -3px;
+    }
+    /*____________Info_______________*/
+
+    .info{
+        margin: 0;
+    }
+
+/***________________________________Section hebergements_______________________***/
+
+#hebergements{
+    height: auto;
+    padding: 0;
+}
+
+#hebergements h1{
+    width: fit-content;
+    font-size: 130%;
+}
+
+#hebergements h2{
+    font-size: 115%;
+    width: fit-content;
+    margin: 20px 0 20px 0;
+}
+
+#hebergements h3{
+    font-size: 110%;
+}
+
+.heb_left, .heb_right {
+    border-radius: 0%;
+}
+
+.nuit{
+    font-size: 100%;
+}
+.note{
+    font-size: 55%;
+}
+
+
+/*______________Les plus populaires______________*/
+
+.heb_right{
+    height: auto;
+    align-items: center;
+}
+
+.titre_popu{
+    padding-top: 20px;
+    margin: 0;
+    width: 320px;
+    justify-content: space-between;
+}
+
+.hotel_popu{
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.hotel_popu a{
+    height: 140px;
+    width: 320px;
+    margin-top: 2.5%;
+}
+
+.hotel_popu article{
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img_card_popu{
+    height: 100%;
+    width: 35%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+}
+
+.text_popu .nuit, .text_popu h3{
+    height: fit-content;
+    margin: 0px;
+}
+
+.text_popu{
+    height: 100%;
+    width: 60%;
+    padding: 10px;
+    flex-direction: row;
+}
+
+
+/*_____________hébergements à  marseille____________*/
+
+.heb_left{
+    height: auto;
+    background-color: #ffffff;
+    padding: 0;
+    width: 320px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.card_hebergements{
+    flex-direction: column;
+    width: fit-content;
+}
+.heb_left .img_card{
+    height: 60%;
+}
+.heb_left a{
+    height: 200px;
+    width: 320px;
+    margin: 2% 0;
+}
+.heb_left article{
+    height: 100%;
+    width: 100%;
+    padding: 1.5%;
+    margin: 0;
+}
+
+.heb_left h3, .heb_left .nuit, .heb_left .note{
+    margin: 2px;
+}
+.text_heb{
+    padding-left: 10px;
+    align-content: flex-start;
+}
+.text_heb .note{
+    font-size: 65%;
+}
+.heb_left h2 a{
+    margin: 0%;
+}
+/***_____________________________section activites_________________________***/
+
+#activites{
+    width: 320px;
+    margin: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0%;
+}
+
+#activites a{
+    width: 320px;
+    height: 200px;
+    margin: 10px 0;
+}
+.act_card{
+    width: 320px;
+    height: auto;
+    flex-direction: column;
+}
+
+.contain_port img{
+    object-position: 0 -5px;
+}
+
+.contain_pomegues img{
+    object-position: 0 -150px;
+}
+/***____________________________FOOTER_______________________________________________***/
+
+footer{
+    padding: 30px;
+    height: auto;
+    flex-direction: column;
+}
+
+.foot {
+    margin: 0;
+}
+
+.text_footer, .foot ul{
+    margin: 10px 0 10px 0;
+}
+
+.a_propos, .nos_hebergements, .assistance{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+} /**** end media****/

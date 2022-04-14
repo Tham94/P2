@@ -1,0 +1,275 @@
+/*******TABLET DISPLAY : BREAKPOINT 992px********/
+@media screen and (max-width: 992px){
+    
+    body{
+        margin: 0;
+        padding:0;
+    }
+    /***___________________________FONT_______________________________________***/
+
+    .link_header ul{
+        font-weight: 600;
+        font-size: 150%;
+    }
+
+    i{
+        font-size: 130%;
+    }
+
+    /***_________________________________HEADER_____________________________________***/
+
+    header{
+        height: 200px; 
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0;
+        padding: 0;
+    }
+
+    header .logo{
+        text-align: center;
+    }
+    .logo{
+        height: 50%;
+        margin: 20px 0 10px 0;
+    }
+
+    .logo img{
+        height: 80px;
+    }
+
+    /***______________NAVIGATION_________________***/
+
+    .link_header {
+        height: 50%;
+        width: 100%;
+    }
+
+    .link_header ul{
+        height: 100%;
+        width: auto;
+    }
+
+    .link_header li{
+        height: 100%;
+        width: 50%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .link_act a, .link_heb a{
+        position:relative;
+        top: 25px;
+    }
+
+    .link_act, .link_heb{
+        border-bottom: #F2F2F2 solid 3px;
+        border-top: none;
+    }
+    .link_act:hover, .link_heb:hover{
+        border-bottom: #0065FC solid 3px;
+        border-top: none;
+    }
+
+    /***____________________Section recherche_filtre____________________________________***/
+
+    .recherche_filtre{
+        margin: 10px;
+        padding: 0;
+    }
+    /*_____________Recherche__________*/
+
+    .recherche_filtre h1, .recherche_filtre div, form{
+        text-align: center;
+    }
+
+    form{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .map i{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 17px;
+    }
+
+    /*______________Filtre___________*/
+
+    .filtre{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .eco, .familial, .romantique, .animaux{
+        margin-top: 10px;
+    }
+    /*____________Info_______________*/
+
+    .info{
+        margin: auto;
+    }
+
+    /***________________________________Section hebergements_______________________***/
+
+    #hebergements{
+        height: 50%;
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    #hebergemetns h1{
+        width: 95%;
+        font-size: 100%;
+        text-align: center;
+    }
+    #hebergements h2{
+        font-size: 100%;
+        margin: 0;
+    }
+    #hebergements h3{
+        font-size: 90%;
+        width: 100%;
+    }
+    .nuit{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .note{
+        margin-top: 5px;
+        align-self: flex-end;
+    }
+
+    /*______________Les plus populaires______________*/
+
+    .heb_right{
+        padding: 10px;
+        height: 270px;
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between ;
+    }
+    .titre_popu{
+        margin: auto;
+        justify-content: center;
+    }
+    
+    .chart{
+        font-size: 120%;
+    }
+
+    .hotel_popu{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .hotel_popu a{
+        width: 30%;
+        height: 100%;
+    }
+    .hotel_popu article{
+        flex-direction: column;
+    }
+    .img_card_popu{
+        height: 60%;
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .text_popu{
+        height: 40%;
+        width: 100%;
+        font-size: 90%;
+        padding: 5px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    /*_____________hébergements à  marseille____________*/
+
+    .heb_left{
+        height: 550px;
+        width: 100%;
+        padding: 30px;
+    }
+ 
+    .heb_left article{
+        width: 95%;
+    }
+
+    .heb_left .img_card{
+        height: 66%;
+    }
+
+    .text_heb{
+        height:33% ;
+        width: 90% ;
+        padding: 5px;
+        font-size: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+    /***________________________________Section activites_______________________***/
+
+    #activites{
+        padding: 10px;
+    }
+    #activites a{
+        width: 30%;
+    }
+    #activites h3{
+        font-size: 100%;
+        padding: 15px;
+    }
+
+    .act_card{
+        margin: 10px 0 10px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+       
+    .vieux_port,
+    .pomegues, 
+    .frioul, 
+    .calanques, 
+    .notre_dame, 
+    .longchamp{
+        height: 45%;
+    }
+    .contain_port,
+    .contain_pomegues,
+    .contain_frioul,
+    .contain_calanques, 
+    .contain_notre_dame, 
+    .contain_longchamp{
+        height: 85%;
+    }
+
+    .contain_frioul img{
+        height: 115%;
+        object-position: 0 0px;
+    }
+
+/***____________________________FOOTER_______________________________________________***/
+
+    footer{
+        padding: 40px;
+        justify-content: space-between;
+    }
+
+    .a_propos, .nos_hebergements, .assistance{
+        width: 30%;
+    }
+
+
+} /**** end media****/
+ 

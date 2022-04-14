@@ -1,0 +1,581 @@
+/** STYLE CSS FOR PROJECT 2 BOOKI **/
+
+/***________________________________GENERAL__________________________________***/
+
+*{
+     box-sizing: border-box;
+     -moz-box-sizing: border-box; /* firefox*/
+     -webkit-box-sizing: border-box; /*chrome*/
+}
+
+body{
+     margin-left: auto;
+     margin-right: auto;
+}
+
+a{
+     text-decoration: none;
+     color: black;
+}
+
+h1{
+     margin: 10px 0 10px 0;
+}
+
+h3{
+     margin: 0;
+}
+
+/***___________________________FONT_______________________________________***/
+
+*{
+     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+ul{
+     font-weight: 400;
+     font-size: 100%;
+}
+
+/***_________________________________HEADER__________________________________***/
+
+header{
+     padding: 0 20px;
+     display:flex;
+     justify-content: space-between;
+}
+
+.logo{
+     text-align: center;
+     margin: 45px 0 10px 0px;
+     width: 200px;
+}
+
+.logo img{
+     height: 45px;
+}
+
+/***____________NAVIGATION_________________***/
+
+
+.link_header ul{
+     width: 300px;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     display: flex;
+     list-style: none;
+}
+
+.link_header li{
+
+     width: 50%;
+}
+
+.link_act a, .link_heb a{
+     position: relative;
+     top: 50px;
+}
+
+.link_heb, .link_act{
+     border-top: white solid 3px;
+}
+
+.link_heb:hover, .link_act:hover{
+     border-top: #0065FC solid 3px;
+}
+
+.link_act a:hover, .link_heb a:hover{
+     color: #0065FC;
+}
+
+/***____________________Section recherche_filtre____________________________________***/
+
+.recherche_filtre{
+     display: flex;
+     flex-direction: column;
+     margin-left: 5px;
+     padding: 10px 50px;
+}
+
+/*______________Recherche___________*/
+
+.recherche_filtre h1{
+     font-size: 140%;
+}
+form{
+     display: flex;
+     margin: 15px 0 20px 0;
+     width: 415px;
+     height: 50px;
+}
+
+.map{
+     font-size: 115%;
+     width: 50px;
+     margin: 0;
+     background-color: #f2f2f2;
+     text-align: center;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+}
+
+.map i{
+     position: relative;
+     top: 15px;
+}
+
+input{
+     border: #f2f2f2 solid 1px;
+     padding: 10px;
+     width: 235px;
+}
+
+input[type=text]:focus{
+     outline: #f2f2f2 ;
+     font-weight: 700;
+     padding: 10px;
+}
+
+button{
+     font-weight: 700;
+     font-size: 110%;
+     color: white;
+     background-color: #0065FC;
+     width: 130px ;
+     border: #0065fc solid 2px;
+     border-top-right-radius: 15px;
+     border-bottom-right-radius: 15px; 
+}
+
+.loupe{
+     display: none;
+}
+
+/*______________Filtre___________*/
+
+.filtre{
+     display: flex;
+     margin: 10px 0 25px 5px;
+}
+
+.filtre div{
+     font-weight: 700;
+     font-size: 105%;
+}
+
+.text_filtre{
+     margin: 0 10px 0 0px;
+     align-self: center;
+}
+
+.im {
+     height: 50px;
+     width: 50px;
+     margin: 0 5px 0 -3px;
+     padding: 0;
+     background-color: #DEEBFF;
+     display: flex;
+     align-items: center;
+     justify-content:center;
+     border-radius: 100%;
+}
+
+.eco{
+     text-transform: capitalize;
+}
+
+.eco, .familial, .romantique, .animaux{
+     height: 50px;
+     margin: 0 10px 0 10px;
+     padding: 0 15px 0 0px;
+     display: flex;
+     align-items: center;
+     border: #dddddd solid 2px;
+     border-radius: 25px;
+}
+.animaux{
+     margin-right: 5px;
+     padding: 0 10px 0 0;
+}
+
+.eco:hover, 
+.familial:hover, 
+.romantique:hover, 
+.animaux:hover{
+     border: #0065FC solid 2px;
+     background-color: #0065FC;
+     color: #DEEBFF;
+}
+
+.a{
+     margin-left: 5px;
+}
+
+.filtre i{
+
+    font-size: 100%;
+     color: #0065FC;
+}
+
+/*__________info__________*/
+
+.info{
+     display: flex;
+     align-items: center;
+}
+
+.info_text{
+     margin-left: 10px;
+}
+
+.info i{
+     font-size: 130%;
+     color: #ffffff;
+     background-color: #0065FC;
+     border: #dddddd solid 1px;
+     border-radius: 100%;
+}
+
+/***_____________________________block hebergements_________________________***/
+
+#hebergements{
+     height: 33%;
+     width: 100%;
+     padding: 20px 50px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+#hebergements h1{
+     font-size: 140%;
+     margin: 0;
+     height: fit-content;
+}
+#hebergements h2{
+     font-size: 120%;
+}
+
+#hebergements h3{
+     font-size: 90%;
+}
+
+#hebergements article:hover{
+     background-color: #f2f2f2;
+     color: #0065FC;
+}
+
+.nuit{
+     font-size: 80%;
+     width: 90%;
+}
+
+.note{
+     font-size: 70%;
+     width: 90%;
+}
+
+/*_____________hébergements à  marseille____________*/
+
+.heb_left{
+     height: 645px;
+     width: 65%;
+     margin: 0;
+     padding: 45px;
+     background-color: #f2f2f2;
+     border-radius: 20px;
+     display: flex;
+     align-content: space-between;
+     flex-wrap: wrap;
+}
+
+.heb_left h1, h2{
+     width: 100%;
+}
+
+.heb_left a{
+     height: 47%;
+     width: 31%;
+}
+
+.card_hebergements{
+     height: 80%;
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-content: space-between;
+}
+
+.heb_left article{
+     height: 100%;
+     width: 100%;
+     padding: 2%;
+     background-color: #ffffff;
+     border-radius: 20px;
+     box-shadow: 0 10px 10px 0px #dadada;
+}
+
+.img_card{
+     height: 60%;
+     width: 100%;
+     margin: 0;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     overflow: hidden;
+}
+
+.img_card img{
+     height: 100%;
+     width: 100%;
+     object-fit:cover;
+}
+
+.text_heb{
+     padding: 10px 0px 0 10px;
+     height: 40%;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.note .blue{
+     color: #0065FC;
+}
+.note .grey{
+     color:grey
+}
+
+/*______________Les plus populaires______________*/
+
+.heb_right{
+     height: 645px;
+     width: 31%;
+     margin: 0;
+     background-color: #f2f2f2;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.titre_popu{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 82%;
+     margin: 0;
+}
+
+.chart{
+     font-size: 130%;
+     margin-left: 20px;
+}
+
+.hotel_popu {
+     height: 80%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.hotel_popu a{
+     height: 28%;
+     width: 82%;
+}
+
+.hotel_popu article{
+     width: 100%;
+     height: 100%;
+     padding: 1.5%;
+     display: flex;
+     background-color: #ffffff;
+     border-radius: 20px;
+     box-shadow: 0 10px 10px 5px #dadada;
+}
+
+.img_card_popu{
+     width: 38%;
+     margin: 0;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+     overflow: hidden;
+}
+
+.img_card_popu img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+.text_popu{
+     width: 55%;
+     margin: 0;
+     padding: 10px;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.text_popu .note{
+     align-self: flex-end;
+}
+
+/***_____________________________section activites_________________________***/
+
+#activites{
+     width: 100%;
+     padding: 50px;
+     display: flex;
+     flex-direction: column;
+}
+
+#activites a{
+     width: 22.5%;     
+     border-radius: 25px;
+     box-shadow: -2px 5px 10px 10px #f6f6f6;
+}
+#activites h1{
+     font-size: 140%;
+     margin-bottom: 0;
+}
+#activites h3{
+     font-size: 100%;
+     width: 100%;
+     padding: 20px;
+}
+
+.act_card{
+     height: 500px ;
+     display: flex;
+     flex-flow: column wrap;
+     align-items: center;
+     justify-content: space-around;
+     align-content: space-between;
+}
+
+.act_card article{
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+}
+.act_card div{
+     margin: 0;
+}
+
+.vieux_port, .calanques{
+     height: 90%;
+}
+
+.pomegues{
+     height: 47%;
+}
+
+.frioul{
+     height: 33%;
+}
+
+.notre_dame{
+     height: 40%;
+}
+
+.longchamp
+{
+     height: 42%;
+}
+
+.contain_port,
+.contain_pomegues,
+.contain_frioul,
+.contain_calanques,
+.contain_notre_dame,
+.contain_longchamp{
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     overflow: hidden;
+}
+.contain_port,.contain_calanques{
+     height: 87%;
+}
+.contain_pomegues{
+     height: 76%;
+}
+.contain_frioul{
+     height: 68%;
+}
+.contain_notre_dame{
+     height: 72%;
+}
+.contain_longchamp{
+     height: 74%;
+}
+
+.contain_port img,
+.contain_pomegues img,
+.contain_frioul img, 
+.contain_notre_dame img,
+.contain_calanques img, 
+.contain_longchamp img{
+     width: 100%;
+     object-fit: cover;
+}
+.contain_port img{
+     height: 110%;
+} 
+
+.contain_frioul img{
+     height: 100%;
+     object-position: 0 -20px;
+}
+.contain_pomegues img{
+     height: 100%;
+     object-position: 0 -115px;
+}
+
+.contain_calanques img{
+     height: 115%;
+}
+.contain_notre_dame img{
+     height: 100%;
+     object-position: 0 0;
+}
+
+.contain_longchamp img{
+     height: 100%;
+     object-position: 0 -10px;
+}
+
+/***____________________________FOOTER_______________________________________________***/
+
+footer{
+     height: 230px;
+     width: 100%;
+     padding: 50px;
+     background-color: #f2f2f2;
+     display: flex;
+}
+
+.foot li{
+     padding: 0;
+     margin: 10px 0;
+}
+
+.foot ul{
+     padding: 0;
+     width: 100%;
+     flex-direction: column;
+     list-style: none;
+}
+
+.a_propos, .nos_hebergements, .assistance{
+     width: 33%;
+     display: flex;
+     flex-direction: column;
+}
+
+.text_footer{
+     font-weight: 700;
+     font-size: 110%;
+}
